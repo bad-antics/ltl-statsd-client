@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_statsd_client
+
+import std::io
+use ltl_statsd_client as lib
+
+fn main() {
+    io::println("ltl_statsd_client demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
